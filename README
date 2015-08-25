@@ -1,3 +1,10 @@
-unzip http://www.info-zip.org/
-uud64win http://www.marks-lab.com/
-grep http://gnuwin32.sourceforge.net/packages/grep.htm
+Mdaemon Nested Zip Mitigation
+
+This script was stirred up to be able to separate nested zip attachments from the mail flow of an MDA.
+
+Following tools are needed in the system search path (i.e. must work from every cmd prompt)
+
+unzip: http://www.info-zip.org/
+uud64win: http://www.marks-lab.com/
+grep: http://gnuwin32.sourceforge.net/packages/grep.htm
+
