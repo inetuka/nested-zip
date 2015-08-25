@@ -1,14 +1,22 @@
-Mdaemon Nested Zip Mitigation
+Nested Zip Mitigation
+
+This file is public domain and provided as-is. There are no guarantees. Use at your own risk.
 
 This script was stirred up to be able to separate nested zip attachments from the mail flow of an MDA.
 
 Steps:
 Isolate the message in question from the mail stream by MD content filter rule "If message has file like *.zip then move ...".
 Decompose the message to its parts (body, attachments...).
-Check content of zip files for more zip files and move message according to outcome.
+Check content list of zip files for more zip files and move message according to outcome.
 
-Tools: (are needed in the system search path i.e. must work from every cmd prompt)
+We are not interested in the third or fourth level of zipped zip files. The mere fact that we have been sent
+a nested zip is to be seen as a fraudulent act alone and therefor is sufficient to not deliver the mail to
+the inculpable and clueless.
+
+Tools: (needed in the system search path i.e. must work from every cmd prompt)
 unzip: http://www.info-zip.org/
 uud64win: http://www.marks-lab.com/
 grep: http://gnuwin32.sourceforge.net/packages/grep.htm
 
+Best regards
+Udo
