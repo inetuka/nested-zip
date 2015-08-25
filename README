@@ -11,6 +11,8 @@ Check content list of zip files for more zip files and move message according to
 
 We are not interested in the third or fourth level of zipped zip files. The mere fact that we have been sent a nested zip is to be seen as a fraudulent act alone and therefor is sufficient to not deliver the mail to the inculpable and clueless.
 
+Depending on the lag your users can afford, the script should be called by the Windows task scheduler once in a while. I tend to call it 24/7 every 5 minutes.
+
 Tools: (needed in the system search path i.e. must work from every cmd prompt)
 unzip: http://www.info-zip.org/
 uud64win: http://www.marks-lab.com/
