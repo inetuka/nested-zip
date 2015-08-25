@@ -1,6 +1,6 @@
 @echo off
 
-set nzPATH="d:\Wan\MDaemon\Public Folders\Ziptest.IMAP"
+set nzPATH="C:\MDaemon\Public Folders\Ziptest.IMAP"
 
 echo start %date% %time%>> %nzPATH%\nestedzip.log
 
@@ -18,7 +18,7 @@ move %nzPATH%\*.msz %nzPATH%\Ok.IMAP\.
 
 for /f "tokens=*" %%i in ('dir /l /b /a:-d %nzPATH%\Ok.IMAP\*.msz') do ren %nzPATH%\Ok.IMAP\%%i *.msg
 
-move %nzPATH%\Ok.IMAP\*.msg D:\Wan\MDaemon\Queues\Local\.
+move %nzPATH%\Ok.IMAP\*.msg C:\MDaemon\Queues\Local\.
 
 echo stop %date% %time%>> %nzPATH%\nestedzip.log
 
