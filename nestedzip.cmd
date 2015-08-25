@@ -3,6 +3,7 @@ rem	--------------------------------------------------------------------------
 rem	name	nestedzip.cmd
 rem	usage	mdaemon nested zip mitigation
 rem	owner	iNet, uka
+rem		github (at) inet (dash) hamburg (dot) de
 rem	date	150824
 rem	depend	%comspec%=cmd.exe
 rem		grep.exe
