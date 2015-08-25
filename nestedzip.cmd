@@ -5,12 +5,12 @@ rem	usage	mdaemon nested zip mitigation
 rem	owner	iNet, uka
 rem	date	150824
 rem	depend	%comspec%=cmd.exe
-rem			grep.exe
-rem			unzip.exe
-rem			uud64win.exe
+rem		grep.exe
+rem		unzip.exe
+rem		uud64win.exe
 rem
-rem         This file is public domain and provided as-is.
-rem			There are no guarantees. Use at your own risk.
+rem	This file is public domain and provided as-is.
+rem	There are no guarantees. Use at your own risk.
 rem
 rem	--------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ SETLOCAL
 
 rem set your MD base install path
 rem
-set "MDPATH=D:\Wan\Mdaemon"
+set "MDPATH=C:\Mdaemon"
 
 rem Assumed you have a special folder for your system logs set it here,
 rem otherwise logging is to %TEMP% folder.
