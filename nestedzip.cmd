@@ -40,6 +40,10 @@ set "nzPATH=%MDPATH%\Public Folders\Ziptest.IMAP"
 set "nzNEST=%nzPATH%\Nested.IMAP"
 set "nzISOK=%nzPATH%\Ok.IMAP"
 
+rem we are alive
+rem
+echo %date% %time%> "%LOGS%\nestedzip.run"
+
 rem Leave this place if there is no work to do
 rem
 if not exist "%nzPATH%\*.msg" goto :eof
