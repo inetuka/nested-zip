@@ -127,7 +127,7 @@ goto :eof
 	rem
 	unzip -qql "%dzPATH%%dzN%.zip" > "%dzPATH%%dzN%.zip.lst"
 
-	grep ".zip" "%dzPATH%%dzN%.zip.lst"
+	grep -i ".zip" "%dzPATH%%dzN%.zip.lst"
 	if "%errorlevel%" EQU "0" set "IS_NESTED=Y"
 	
 	goto :eof
