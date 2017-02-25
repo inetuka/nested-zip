@@ -30,7 +30,7 @@ rem Path to folder with messages to be analysed, this is where messages with
 rem zip attachments got moved to by MD. You need a MD rule = "if message has
 rem file like *.zip move to this folder and stop processing".
 rem You have to create these folders by hand or from within MD.
-rem CAVE: The folder must be accessible by MD content filter move rules.
+rem CAVEAT: The folder must be accessible by MD content filter move rules.
 rem I chose \Public Folders\Ziptest
 rem                                \Nested
 rem                                \Ok
@@ -74,10 +74,10 @@ if exist "%nzPATH%\*.msz" (
 	move "%nzPATH%\*.msz" "%nzISOK%\."
 	for /f "tokens=*" %%i in ('dir /l /b /a:-d "%nzISOK%\*.msz"') do ren "%nzISOK%\%%i" *.msg
 	
-	)
+)
 
 rem Feed back the messages to the local mail queue of MD.
-rem CAVE: If you have changed the MD local queue path from default you have to do it here too.
+rem CAVEAT: If you have changed the MD local queue path from default you have to do it here too.
 rem 
 if exist "%nzISOK%\*.msg" move "%nzISOK%\*.msg" "%MDPATH%\Queues\Local\."
 
@@ -121,7 +121,7 @@ goto :eof
 	set "dzN=%~n1"
 	set "dzPATH=%~dp1"
 	
-	rem CAVE: unzip must not report back any more info than files contained in the zip.
+	rem CAVEAT: unzip must not report back any more info than files contained in the zip.
 	rem If it lists the zip name itself grep will always succeed. This is not what we want.
 	rem Check that -qql (minus cue cue ell) is understood correctly
 	rem
