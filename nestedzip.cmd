@@ -10,7 +10,7 @@ rem			unzip.exe
 rem			uud64win.exe
 rem
 rem	This file is public domain and provided as-is.
-rem	There are no guarantees. Use at your own risk.
+rem	There are NO guarantees. Use at your own risk.
 rem
 rem	170322	major overhaul
 rem 		send alert message to receiving user, more logging
